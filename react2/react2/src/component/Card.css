@@ -1,0 +1,90 @@
+.card-container {
+  height: 280px;
+  width: 280px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center; 
+  align-items: center;
+  margin: 0.5rem auto; 
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: transform 0.3s;
+}
+
+.card-container.hovered {
+  box-shadow: 0px 15px 12px rgb(255, 1, 79);
+  transform: scale(1.1);
+}
+
+.card-container .icon {
+  font-size: 60px;
+  margin: 0; 
+  padding: auto;
+  color: rgb(255, 1, 79);
+}
+
+.card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 100%; 
+}
+
+.card-title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1rem; 
+  font-size: 24px;
+  text-align: center; 
+}
+
+@media only screen and (max-width: 767px) {
+  .row-cols-md-3 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+}
+  .card-container {
+    margin: 0.5rem auto; 
+}
+
+.social-icons {
+  display: grid;
+  border-radius: 25px;
+  grid-template-columns: repeat(4, auto);
+  gap: 12px;
+  font-size: 32px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 8px 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.3s ease 0s;
+}
+
+.social-icons a {
+  text-align: center;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s ease 0s;
+  transform: scale(1.07);
+}
+
+.social-icons :hover {
+  color:  rgb(255, 1, 79);
+  padding: 2px;
+  transition: all 0.5s ease 0s;
+  transform: scale(1.1);
+}
+
+.vertical-line {
+  height: 32px;
+  width: 1px;
+  background-color: white;
+  margin: 0 16px;
+}

@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #282c34;
+  min-height: 100vh;
+}
+.container-fluid {
+  width: 100%;
+  display: flex;
+  margin: 8px 0px;
+  gap: 24px;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
